@@ -1,0 +1,25 @@
+# macOS system files
+.DS_Store
+
+# Node.js dependencies (if you later use npm, React, Tailwind, etc.)
+node_modules/
+
+# Build / cache / logs
+dist/
+build/
+.cache/
+*.log
+
+# VSCode settings
+.vscode/
+
+# OS thumbnail files
+Thumbs.db
+
+# Personal or sensitive files
+*.env
+.env.local
+.env.*.local
+
+# Optional: files you don't want on GitHub
+assets/private/

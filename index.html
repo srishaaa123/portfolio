@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { background-color: #1a1a1a; color: #f3f3f3; }
+    .gold { color: #d4af37; }
+    .gold-bg { background-color: #d4af37; }
+  </style>
+</head>
+<body>
+<!-- ===== Navbar ===== -->
+<header class="gold-gradient-navbar shadow">
+  <nav class="container mx-auto flex justify-between items-center p-4">
+    <h1 class="text-xl font-bold glow-text">My Portfolio</h1>
+    <ul class="flex space-x-4">
+      <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+      <li><a href="#projects" class="hover:text-yellow-500">Works</a></li>
+      <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+/* Static rich gold-yellow-black gradient background */
+.gold-gradient-navbar {
+  background: linear-gradient(
+    90deg,
+    #000000,            /* deep black */
+    #36300f,            /* dark gold */
+    #35311b,            /* bright gold/yellow */
+    #5a511f,            /* dark gold */
+    #000000             /* deep black */
+  );
+}
+</style>
+
+
+<!-- ===== Home Section ===== -->
+<section id="home" class="relative py-40 bg-cover bg-center" style="background-image: url('images/background.png');">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  
+  <!-- Subtle decorative shapes with gold tones -->
+  <div class="absolute top-10 left-10 w-8 h-8 border-2 border-yellow-400 rounded-full animate-pulse"></div>
+  <div class="absolute bottom-10 right-10 w-4 h-4 bg-yellow-500 rounded-full animate-bounce"></div>
+  <div class="absolute top-20 right-20 w-6 h-6 border border-yellow-400 rotate-45"></div>
+
+  <!-- Main content -->
+  <div class="relative flex flex-col items-center justify-center text-center px-4">
+    <img src="images/profile.jpg" alt="Profile Photo" class="w-32 h-32 rounded-full mb-4 border-4 border-gold">
+    <h2 class="text-3xl font-semibold mb-1">Srisha G</h2>
+    
+    <!-- Mission statement -->
+    <p class="text-yellow-400 mb-2"></p>
+    
+    <!-- Typing effect text -->
+    <p class="text-lg mb-4">
+      <span id="typing" class="gold"></span>
+    </p>
+    
+    <!-- Personal quote with fade-in animation -->
+    <p class="text-gray-300 italic mb-4 animate-fadeIn">
+      “Driven by curiosity and creativity to turn ideas into secure, practical solutions.”
+    </p>
+
+    <a href="assets/resume.pdf" class="gold-bg text-black px-4 py-2 rounded hover:bg-yellow-500">Download Resume</a>
+    
+    <div class="flex space-x-4 mt-6">
+      <a href="https://www.linkedin.com/in/srisha-g011105/" target="_blank">
+        <i class="fab fa-linkedin fa-2x hover:text-yellow-500"></i>
+      </a>
+      <a href="https://github.com/srishaaa123" target="_blank">
+        <i class="fab fa-github fa-2x hover:text-yellow-500"></i>
+      </a>
+    </div>
+
+    <!-- Scroll down indicator -->
+    <div class="mt-8 animate-bounce text-yellow-400">
+      <i class="fas fa-angle-down fa-2x"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Custom CSS (add in <style> block or CSS file) ===== -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+  .animate-fadeIn {
+    animation: fadeIn 2s ease forwards;
+  }
+</style>
+
+  <!-- ===== About Section ===== -->
+<section id="about" class="relative py-20 bg-cover bg-center" style="background-image: url('images/about-bg.png');">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="relative container mx-auto px-4 max-w-3xl">
+    <h3 class="text-2xl font-semibold gold text-center mb-8">About Me</h3>
+    
+    <p class="mb-8">
+      I’m an AI & Blockchain Solutions Developer who enjoys transforming complex ideas into practical, real-world applications.
+      My work spans developing privacy-preserving authentication systems using zero-knowledge proofs, building generative AI tools
+      that predict hospital readmissions, and creating full-stack projects like flight booking systems and personal chat apps.
+      I love working across technologies—from Python, JavaScript, and Solidity to modern frameworks like React and Flask—and exploring
+      how AI, blockchain, and web development can come together to solve meaningful problems. Driven by curiosity and creativity,
+      I’m passionate about making technology smarter, more secure, and easier for people to use.
+    </p>
+
+    <h4 class="font-semibold mb-2 gold">Key Skills:</h4>
+    <ul class="list-disc list-inside mb-8 space-y-1">
+      <li><strong>Programming Languages:</strong> Python, JavaScript, C++, Solidity, HTML, CSS</li>
+      <li><strong>AI & Machine Learning:</strong> Generative AI, NLP, predictive analytics</li>
+      <li><strong>Blockchain & Web3:</strong> Zero-Knowledge Proofs (ZKP), decentralized applications</li>
+      <li><strong>Cloud & Deployment:</strong> AWS, Render, Docker</li>
+      <li><strong>Integration:</strong> AI + blockchain solutions, real-time data systems, RESTful APIs</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2 gold">Experience:</h4>
+    <ul class="space-y-2">
+      <li class="bg-gray-800 rounded-lg p-4">
+        <span class="block font-medium">Full Stack Intern at LaunchED Global Pvt Ltd</span>
+        <span class="text-sm text-gray-400">March 2025 – April 2025</span>
+      </li>
+      <li class="bg-gray-800 rounded-lg p-4">
+        <span class="block font-medium">Blockchain Intern at DLK Software Solutions</span>
+        <span class="text-sm text-gray-400">June 2025 – July 2025</span>
+      </li>
+      <li class="bg-gray-800 rounded-lg p-4">
+        <span class="block font-medium">Software Intern at Trios Technologies Pvt Ltd</span>
+        <span class="text-sm text-gray-400">June 2024 – July 2024</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+ <!-- ===== Projects Section ===== -->
+<section id="projects" class="relative py-20 bg-cover bg-center" style="background-image: url('images/contact-bg.png');">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="relative container mx-auto px-4">
+    <h3 class="text-2xl font-semibold gold text-center mb-8">My Latest Works</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <div class="bg-gray-800 rounded-lg p-4 hover:scale-105 hover:shadow-xl transition">
+        <img src="images/project1.jpg" alt="Project 1" class="mb-4 rounded">
+        <h4 class="font-semibold mb-2">SkyReserve: Real-time Flight Ticket Booking and Management System</h4>
+        <p class="mb-2">
+          A user-friendly platform to search, book, and manage flight tickets securely. It supports real-time flight data, digital ticket generation, and booking history. It is built with a responsive interface and robust backend for seamless travel management. It ensures a smooth user experience across devices with a clean, modern design and secure payment integration.
+        </p>
+        <a href="https://github.com/srishaaa123/FlightTicketBookingSystem" target="_blank" class="text-yellow-500 hover:underline">View on GitHub</a>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-4 hover:scale-105 hover:shadow-xl transition">
+        <img src="images/project2.jpg" alt="Project 2" class="mb-4 rounded">
+        <h4 class="font-semibold mb-2">GhostPass: Zero-Knowledge Proof Based Authentication System</h4>
+        <p class="mb-2">
+          A privacy-first authentication system using Zero-Knowledge Proofs to verify users without revealing credentials. It protects against phishing, replay, and credential theft by leveraging the Schnorr protocol. It is ideal for decentralized apps and secure digital identity management. Built with a lightweight cryptographic design for seamless integration into modern web and blockchain ecosystems.
+        </p>
+        <a href="https://github.com/srishaaa123/zkp-auth-system" target="_blank" class="text-yellow-500 hover:underline">View on GitHub</a>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-4 hover:scale-105 hover:shadow-xl transition">
+        <img src="images/project3.jpg" alt="Project 3" class="mb-4 rounded">
+        <h4 class="font-semibold mb-2">ChatApp: Personal Flask-Based Chat Application</h4>
+        <p class="mb-2">
+          A simple one-to-one chat app built with Python’s Flask framework and HTML/CSS frontend. It stores messages in a JSON file to persist chats across page reloads. It features a minimalistic interface, private messaging, and plans for real-time upgrades. Designed for lightweight deployment, it offers a clean user experience and an easy-to-extend codebase for adding new chat features.
+        </p>
+        <a href="https://github.com/srishaaa123/ChatApp" target="_blank" class="text-yellow-500 hover:underline">View on GitHub</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== Contact Section ===== -->
+<section id="contact" class="relative py-20 bg-cover bg-center" style="background-image: url('images/projects-bg.png');">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="relative container mx-auto px-4">
+    <h3 class="text-2xl font-semibold gold text-center mb-8">Thank You</h3>
+    <form 
+      action="https://formspree.io/f/xkgznroa" 
+      method="POST" 
+      class="max-w-lg mx-auto space-y-4"
+    >
+      <input 
+        type="text" 
+        name="name" 
+        placeholder="Name" 
+        required 
+        class="w-full border border-gray-600 bg-gray-800 rounded p-2"
+      >
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Email" 
+        required 
+        class="w-full border border-gray-600 bg-gray-800 rounded p-2"
+      >
+      <textarea 
+        name="message" 
+        placeholder="Message" 
+        rows="4" 
+        required 
+        class="w-full border border-gray-600 bg-gray-800 rounded p-2"
+      ></textarea>
+      <button 
+        type="submit" 
+        class="gold-bg text-black px-4 py-2 rounded hover:bg-yellow-500"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
+
+
+ <!-- ===== Footer ===== -->
+<footer class="gold-gradient-footer text-center py-4 mt-4 border-t border-gray-700 glow-text">
+  &copy; 2025 Srisha G. All rights reserved.
+</footer>
+
+<style>
+/* Static rich gold-yellow-black gradient background for footer */
+.gold-gradient-footer {
+  background: linear-gradient(
+    90deg,
+    #000000,            /* deep black */
+    #373213,            /* dark gold */
+    #211e10,            /* bright gold/yellow */
+    #322d14,            /* dark gold */
+    #000000             /* deep black */
+  );
+}
+</style>
+
+
+  <!-- ===== Dynamic Typing Effect ===== -->
+  <script>
+    const text = ["AI & Blockchain Solutions Developer", "Creative Coder"];
+    let count = 0, index = 0, currentText = "", letter = "";
+    (function type(){
+      if (count === text.length) count = 0;
+      currentText = text[count];
+      letter = currentText.slice(0, ++index);
+      document.getElementById('typing').textContent = letter;
+      if(letter.length === currentText.length){
+        count++; index=0;
+        setTimeout(type, 1000);
+      } else setTimeout(type, 200);
+    })();
+  </script>
+
+</body>
+</html>
