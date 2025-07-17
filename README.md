@@ -2,8 +2,6 @@
 
 Welcome to my personal portfolio — a showcase of projects, skills, and experience in AI, blockchain, and full-stack development.
 
-![Portfolio Banner](images/profile.jpg)
-
 ##  About
 This portfolio highlights my work as an AI & Blockchain Solutions Developer.  
 It features:
